@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css-file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="menu-icon" onclick="document.getElementById('menu-bar').style.right = '0px';document.getElementById('close-btn').style.rotate='90deg'"><ion-icon name="menu-outline" class="toggle"></ion-icon></a>
+        <ul class="nav-links" id="menu-bar">
+            <ion-icon name="close-outline" id="close-btn" class="close-icon" onclick="document.getElementById('menu-bar').style.right = '-955px';"></ion-icon>
+            <li><a href="#home" onclick="document.getElementById('menu-bar').style.right = '-955px';" class="active nav-link">Home</a></li>
+            <li><a href="#services" onclick="document.getElementById('menu-bar').style.right = '-955px';" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" onclick="document.getElementById('menu-bar').style.right = '-955px';" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" onclick="document.getElementById('menu-bar').style.right = '-955px';" class="nav-link">Contact</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <div class="content">
+            <h2>John Thomas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat quia repudiandae architecto ad aut, illum itaque id, voluptatibus molestias laudantium et, deleniti nisi magnam!</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+       <img src="imgs/men.png" alt="profile-img" class="profile-img">
+        
+    </section>
+    <section id="services">
+        <div class="sec-text">
+            <h2>What I am great at?</h2>
+            <p>Lorem ipsum dolor sit optio perspiciatis qui. Labore, aperiam voluptate? Voluptatibus, soluta quo ratione id enim ab, cumque error omnis autem ullam facilis in, corporis est mollitia.</p>            
+        </div>
+        <div class="content">
+            <div class="servicesBox">
+                <img src="imgs/icon1.png" alt="icon">
+                <h3>Web Designing</h3>
+            </div>
+            <div class="servicesBox">
+                <img src="imgs/icon2.png" alt="icon">
+                <h3>Web Development</h3>
+            </div>
+            <div class="servicesBox">
+                <img src="imgs/icon3.png" alt="icon">
+                <h3>Android Developement</h3>
+            </div>
+            <div class="servicesBox">
+                <img src="imgs/icon4.png" alt="icon">
+                <h3>Video Editing</h3>
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="sec-text">
+            <h2>My master piece collection</h2>
+            <p>Lorem ipsum dolor sit optio perspiciatis qui. Labore, aperiam voluptate? Voluptatibus, soluta quo ratione id enim ab, cumque error omnis autem ullam facilis in, corporis est mollitia.</p>            
+        </div>
+        <div class="content">
+            <div class="imgBx">
+                <img src="imgs/img1.jpg" alt="" srcset="">
+            </div>
+            <div class="imgBx">
+                <img src="imgs/img2.jpg" alt="" srcset="">
+            </div>
+            <div class="imgBx">
+                <img src="imgs/img3.jpg" alt="" srcset="">
+            </div>
+            <div class="imgBx">
+                <img src="imgs/img4.jpg" alt="" srcset="">
+            </div>
+            <div class="imgBx">
+                <img src="imgs/img5.jpg" alt="" srcset="">
+            </div>
+            <div class="imgBx">
+                <img src="imgs/img6.jpg" alt="" srcset="">
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="sec-text">
+            <h2>Contact Me</h2>
+            <p>Lorem Labore, aperiam voluptate? Voluptatibus, soluta quo ratione id enim ab, cumque error omnis autem ullam facilis in, corporis est mollitia.</p>            
+        </div>
+        <div class="content">
+            <a href="#">
+                <ion-icon name="mail-open-outline"></ion-icon>dummy@email.name
+            </a>
+            <a href="#">
+                <ion-icon name="call-outline"></ion-icon>+123 000 000
+            </a>
+            <a href="#">
+                <ion-icon name="logo-skype"></ion-icon>skype
+            </a>
+            <a href="#">
+                <ion-icon name="logo-whatsapp"></ion-icon>whatsapp
+            </a>
+        </div>
+        
+        <div class="center footer">
+            <div class="copyrights">
+                Copyright &copy; <a href="#">venu-webdev</a>. All rights reserverd.
+            </div>
+        </div>
+    </section>
+
+    <!-- script -->
+    <script>
+        function menu(){
+            menu = document.getElementByClassName("nav-links");
+            menu.style.right = "0px";
+        }
+    </script>
+        
+</body>
+
+</html>
