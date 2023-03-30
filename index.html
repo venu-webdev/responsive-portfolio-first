@@ -132,6 +132,31 @@
             menu.style.right = "0px";
         }
     </script>
+    <!-- js -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".servicesBox"), {
+		max: 25,
+		speed: 800,
+        glare: true,
+        "max-glare":.8,
+	});
+	
+	// //It also supports NodeList
+	// VanillaTilt.init(document.querySelectorAll(".card"));
+</script> 
+<!-- js -->
+<script type="text/javascript">
+VanillaTilt.init(document.querySelectorAll(".imgBx"), {
+    max: 25,
+    speed: 800,
+    glare: true,
+    "max-glare":.8,
+});
+
+// //It also supports NodeList
+// VanillaTilt.init(document.querySelectorAll(".card"));
+</script>         
         
 </body>
 
